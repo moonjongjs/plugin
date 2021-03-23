@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <script src="./js//lib/jquery-1.12.4.min.js"></script>
+    <script src="./js/slide_3D.js"></script>
+    <style>
+        div {height:1000px;}
+        #box1{background:#99c;}
+        #box2{background:#9cc;}
+        #box3{background:#c9c;}
+        #box4{background:#99c;}
+        #box5{background:#c88;}
+        #box6{background:#99c;}
+        #box7{background:#86c;}
+        #box8{background:#99c;}
+    </style>
+
+
+</head>    
+<body>
+
+    <div id="box1" class="sec">플러그인 개발</div>
+    <div id="box2" class="sec">플러그인 개발 배경 지정</div>
+    <div id="box3" class="sec">섹션1</div>
+    <div id="box4" class="sec">섹션2</div>
+    <div id="box5" class="sec">섹션3</div>
+    <div id="box6" class="sec">섹션4</div>
+    <script>
+     
+        $('.sec').on({
+            click:function(){
+                // var id = $(this).attr('id');
+                var id = $(this).prop('id');
+                    $.obj.smothScroll(id);
+            }
+        });
+        
+       
+    </script>
+
+
+        
+</body>
+</html>
